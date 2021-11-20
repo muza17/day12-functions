@@ -1,7 +1,7 @@
 //1-topshiriq
 //input sonlar summasi
 
-//arraydagi sonlarni qo'shadigan funksiya yasavolamiz:
+// Istalgan arraydagi sonlarni qo'shadigan funksiya yasavolamiz:
 var arr1 = [1,2,3,4];
 function sumElement(arr){
      
@@ -12,51 +12,26 @@ function sumElement(arr){
     }
     return sum;
 }
-console.log(sumElement(arr1));
 
-// function sumInput(){
-//    var inputValue = (prompt("Istalgan son kiriting : "));
-//     var newArr = [];
-//     var number = 0;
-//     if(inputValue==""|| typeof(inputValue)==NaN||inputValue==null){
-        
-//         console.log(typeof inputValue);
-//         console.log(sumElement(newArr));
-//         return;
-        
-        
-//     }else{
-//         console.log(typeof inputValue);
-//         newArr.push(inputValue);
-//         console.log(sumElement(newArr));
-//     }
-     
 
-// }
 
-// sumInput();
-// typeof(Number(inputValue))==number
+
+
+
 
 function sumInput() {
-    
+    total = 0;
     var newArr = [];
-    for (let i= 0; i < 50; i++) {
-        var inputValue = prompt("Istalgan son kiriting : ");
-       
-        if (typeof(Number(inputValue))=="number" && inputValue && Number(inputValue)===0) {
-            newArr.push(Number(inputValue));
-            
-        } else{
-            console.log(sumElement(newArr));
-        }
-        
+    var inputValue = Number(prompt("Istalgan son kiriting : "));
+    while (isNaN(inputValue) == false) {
+        newArr.push(inputValue);
+        var inputValue = Number(prompt("Istalgan son kiriting : "));
     }
-
+    newArr.forEach(newArrinputValue => total += newArrinputValue);
+    return total;
 }
 
-sumInput();
-
-    
+ console.log(sumInput());  
 
 
 
