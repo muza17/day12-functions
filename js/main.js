@@ -2,7 +2,7 @@
 //input sonlar summasi
 
 // Istalgan arraydagi sonlarni qo'shadigan funksiya yasavolamiz:
-var arr1 = [1,2,3,4];
+
 function sumElement(arr){
      
 
@@ -12,11 +12,6 @@ function sumElement(arr){
     }
     return sum;
 }
-
-
-
-
-
 
 
 function sumInput() {
@@ -36,44 +31,29 @@ function sumInput() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //2-topshiriq
-// var data = ["Jazz", "Blues"]
-// console.log(data);
+var data = ["Jazz", "Blues"]
+console.log(data);
 
-// data.push("Roll-n-roll")
-// console.log(data);
+data.push("Roll-n-roll")
+console.log(data);
 
-//arrayning o'rtadagi qiymatini topish funksiyasi
-// function findMiddle(arr){
-//     var middle = arr.length%2;
-//     if(arr.length%2!=0){
-//         return middle;
-//     }
-// }
-// data.splice(findMiddle(data),1,"Classics");
+// Istalgan arrayning o'rtadagi qiymatini topish funksiyasi
+function findMiddle(arr){
+    var middle = arr.length%2;
+    if(arr.length%2!=0){
+        return middle;
+    }
+}
+data.splice(findMiddle(data),1,"Classics");
 
-// console.log(data);
+console.log(data);
 
-// data.shift("Jazz")
-// console.log(data);
+data.shift("Jazz")
+console.log(data);
 
-// data.unshift("Rap", "Reggage")
-// console.log(data);
+data.unshift("Rap", "Reggage")
+console.log(data);
 
 
 
@@ -81,19 +61,21 @@ function sumInput() {
 
 
 //3-topshiriq
-// var salaries = {
-//     "Akmal": 1200,
-//     "Salim": 5200,
-//     "Karima": 1800
-// }
-// function sumSalaries(arr){
-      
-//       let sum = 0;
-//       for (let element of Object.values(arr)) {
-//         sum += element;
-//       }
-//       return sum;
 
-// }
+
+var salaries = {
+    "Akmal": 1200,
+    "Salim": 5200,
+    "Karima": 1800
+}
+function sumSalaries(arr){
+      
+      let sum = 0;
+      for (let element of Object.values(arr)) {
+        sum += element;
+      }
+      return sum;
+
+}
   
-//   console.log(sumSalaries(salaries));
+  console.log(sumSalaries(salaries));
