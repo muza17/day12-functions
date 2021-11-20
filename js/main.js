@@ -13,20 +13,20 @@ function sumElement(arr){
     return sum;
 }
 
+var input = prompt('Enter number');
 
-function sumInput() {
-    total = 0;
-    var newArr = [];
-    var inputValue = Number(prompt("Istalgan son kiriting : "));
-    while (isNaN(inputValue) == false) {
-        newArr.push(inputValue);
-        var inputValue = Number(prompt("Istalgan son kiriting : "));
+    var arrNumbers = [];
+
+    while (typeof Number(input) === 'number' && !isNaN(Number(input)) && !!input && input.trim().length !== 0) {
+      arrNumbers.push(Number(input))
+
+      input = prompt('Enter number');
+      console.log('input', input)
     }
-    newArr.forEach(newArrinputValue => total += newArrinputValue);
-    return total;
-}
 
- console.log(sumInput());  
+    console.log(sumElement(arrNumbers));
+
+
 
 
 
